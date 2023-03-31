@@ -20,13 +20,8 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/fextras/overlay
 
 PRODUCT_PACKAGES += \
-    TurboPrebuilt \
     wellbeingconf \
     googleconf
-
-PRODUCT_COPY_FILES += \
-    vendor/fextras/etc/privapp-permissions-elgoog.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-elgoog.xml \
-    vendor/fextras/etc/googlesysconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/elgoog.xml
 
 # Inherit from fonts config
 $(call inherit-product, vendor/fextras/config/fonts.mk)
